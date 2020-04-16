@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Portal Covid-19</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="judul_artikel">Judul Artikel</string>
+    <string name="isi_artikel">Isi Artikel</string>
+    <string name="telepon">Telepon</string>
+    <string name="peta">Peta</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_artikel"
+    android:padding="16dp"
+    android:elevation="2dp"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:id="@+id/foto_rs"
+        android:src="@android:color/darker_gray"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/foto_rs"
+        android:layout_toRightOf="@id/foto_rs"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nama_rs"
+            android:text="@string/judul_artikel"
+            android:fontFamily="@font/opensansbold"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alamat_rs"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensansregular"
+            tool:text="@string/isi_artikel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/koordinat_rs"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensansregular"
+            tool:text="@string/isi_artikel"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telepon_rs"
+            android:ellipsize="end"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensansregular"
+            tool:text="@string/isi_artikel"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btn_peta"
+                android:background="@android:color/holo_blue_light"
+                android:textColor="@android:color/white"
+                android:text="@string/peta"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/btn_telepon"
+                android:background="@android:color/holo_green_light"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/telepon"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
